@@ -1,4 +1,5 @@
 ## Changes to original
+* **Includes host and FPGA binaries, please remove if merging!**
 * Adds two new datasets (`arrow.txt` and `comb.txt`)
 * Adds a `main()` to SSSP
 * Adds `userData` field to `graphInfo`
