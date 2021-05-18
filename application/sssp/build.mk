@@ -12,4 +12,4 @@ HAVE_APPLY_OUTDEG=false
 SCHEDULER=secondOrderEstimator
 
 #entry
-DEFAULT_ENTRY=true
+DEFAULT_ENTRY=false

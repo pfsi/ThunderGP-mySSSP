@@ -13,6 +13,7 @@ typedef struct
     int compressedVertexNum;
     int edgeNum;
     int blkNum;
+    unsigned long userData;
 } graphInfo;
 
 /* misc */

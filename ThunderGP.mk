@@ -11,7 +11,7 @@ TARGET_BANDWIDTH := 77
 # max: 77GB/s
 # this value can be overridden by $(app)/build.mk
 
-DEVICES := xilinx_vcu1525_xdma_201830_1
+DEVICES := xilinx_u250_xdma_201830_2
 # device list:
 #   xilinx_vcu1525_xdma_201830_1
 #   xilinx_u200_xdma_201830_2

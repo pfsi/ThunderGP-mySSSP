@@ -18,15 +18,14 @@ int dataPrepareProperty(graphInfo *info)
     }
     prop_t *edgeProp    = (prop_t*)get_host_mem_pointer(MEM_ID_EDGE_PROP);
 
-    //int edgeNum = info->edgeNum;
     int alignedEdgeNum = get_he_mem(MEM_ID_EDGE_PROP)->size / sizeof(int);
 
     for (int i = 0; i < alignedEdgeNum; i++)
     {
-        edgeProp[i] = i % 16;
+        edgeProp[i] = 1;
     }
-    int select_index  = ((double)std::rand()) / ((RAND_MAX + 1u) / info->vertexNum);
-    vertexPushinProp[select_index] = 0x80000001;
+    const unsigned long select_index = info->userData;
+    vertexPushinProp[select_index] = 0x80000000;
 
     return 0;
 }
